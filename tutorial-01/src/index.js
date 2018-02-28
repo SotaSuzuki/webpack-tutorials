@@ -1,8 +1,10 @@
 import _ from 'lodash'
 import greet from './components/greet';
 
-greet.hello()
-greet.konichiwa()
+greet('ja')
+greet('en')
+greet('es')
+greet('de')
 
 const component = () => {
   const element = document.createElement('div')
