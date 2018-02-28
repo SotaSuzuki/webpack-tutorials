@@ -1,0 +1,21 @@
+{
+  "name": "tutorial-03-with-vue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build:prod": "webpack --mode 'production'",
+    "build:dev": "webpack --mode 'development'"
+  },
+  "devDependencies": {
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "dependencies": {
+    "vue": "^2.5.13"
+  }
+}
