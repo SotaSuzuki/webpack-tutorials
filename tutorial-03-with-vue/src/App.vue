@@ -1,7 +1,7 @@
-<template lang="html">
-  <div>
-    <h1><Hollow/></h1>
-  </div>
+<template lang="pug">
+  div
+    h1
+      Hollow
 </template>
 
 <script>
