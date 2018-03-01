@@ -1,21 +1,11 @@
 <template lang="html">
-  <p :style="style">Welcom to the <strong>HOLLOW</strong> world!</p>
+  <p class="the-text">Welcom to the <strong>HOLLOW</strong> world!</p>
 </template>
 
 <script>
 export default {
   name: 'hollow',
 
-  data () {
-    return {
-      style: {
-        fontSize: '80px',
-        fontFamily: 'fantasy, sans-serif',
-        fontWeight: 'lighter',
-        color: '#4b4b4b'
-      }
-    }
-  },
   computed: {
     myId () {
       return this.$_uid
@@ -27,3 +17,20 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.the-text {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 4px solid #3b3b3b;
+  border-bottom: 4px solid #3b3b3b;
+  font-size: 62px;
+  font-weight: 200;
+  font-family: monospace, sans-serif;
+  color: #3b3b3b;
+  strong {
+    font-style: italic;
+    font-weight: inherit;
+    color: #ff4a4a;
+  }
+}
+</style>
