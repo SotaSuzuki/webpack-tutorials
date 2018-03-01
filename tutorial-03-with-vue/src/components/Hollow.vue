@@ -15,6 +15,15 @@ export default {
         color: '#4b4b4b'
       }
     }
+  },
+  computed: {
+    myId () {
+      return this.$_uid
+    }
+  },
+
+  beforeCreate () {
+    this.$sayHello()
   }
 }
 </script>
