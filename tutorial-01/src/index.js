@@ -1,6 +1,8 @@
 import _ from 'lodash'
 import greet from './components/greet';
 
+import './style.scss'
+
 greet('ja')
 greet('en')
 greet('es')

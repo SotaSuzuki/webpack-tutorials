@@ -12,6 +12,26 @@ module.exports = {
     filename: '[name].bundle.js'
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+              sourceMap: true,
+              importLoaders: 2 // sass は 2
+            }
+          },
+          'sass-loader'
+        ]
+      }
+    ]
+  },
+
   devServer: {
     contentBase: 'dist',
     open: false,
