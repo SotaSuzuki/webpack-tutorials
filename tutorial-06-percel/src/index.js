@@ -1,4 +1,5 @@
 import { h, render, Component } from 'preact'
+import TodoList from './components/TodoList'
 
 class Clock extends Component {
   constructor () {
@@ -31,5 +32,6 @@ render((
     <h1>Hello, preact!</h1>
     <Clock/>
     <button onClick={ e => alert('Hi!') }>Click me!</button>
+    <TodoList/>
   </div>
 ), document.getElementById('app'))
