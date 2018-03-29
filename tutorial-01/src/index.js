@@ -11,7 +11,7 @@ greet('de')
 const component = () => {
   const element = document.createElement('div')
 
-  element.innerHTML = _.join(['Hello', 'webpack4'], ' ')
+  element.innerHTML = _.join(['Hello', 'webpack4', '!!!!'], ' ')
 
   return element
 }

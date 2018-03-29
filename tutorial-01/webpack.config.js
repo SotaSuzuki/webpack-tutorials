@@ -45,6 +45,6 @@ module.exports = {
 
   devServer: {
     contentBase: 'dist',
-    open: false,
+    open: true,
   },
 }
